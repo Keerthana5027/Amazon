@@ -4,7 +4,7 @@ import useFetchItems from './useFetchItems';
 
 function Cart() {
   const { id } = useParams();
-  // const [item, setItem] = useState(null);
+ 
 
   const [data]=useFetchItems((`https://fakestoreapi.com/products/${id}`),[id])
   const [showAlert, setShowAlert] = useState(false);
